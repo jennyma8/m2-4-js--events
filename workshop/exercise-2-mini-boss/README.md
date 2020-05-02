@@ -15,7 +15,7 @@ Create a page that
 1. contains 3 sections (one for each of the following)
 2. displays the current time
 3. contains a start/stop button with a stopwatch which starts at 00:00 and continues until the user clicks "stop"
-4. contains a timer where the user can enter a number of seconds, click start and the timer counts down to 0. There should be a sound announcingthe end as well.
+4. contains a timer where the user can enter a number of seconds, click start and the timer counts down to 0. ///stretch: There should be a sound announcing the end as well.
 
 ### Make it look "decent"
 
