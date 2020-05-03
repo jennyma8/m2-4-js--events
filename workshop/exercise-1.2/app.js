@@ -21,3 +21,32 @@
 // Stretch goal
 // Make the countdown live (show a countdown that updates several times a
 // second)
+const body = document.querySelector('body')
+const result = document.getElementById('result');
+
+let hasWon = false;
+
+function clickEvent() {
+    if (hasWon = true) {
+        body.innerText = 'You won!'
+    }
+    body.removeEventListener('click', clickEvent);
+}
+
+//Math.random() is between 0.01 and 1
+//if I do * 3, the random number will be between 0.03 and 3
+//if I do + 2  after, the random number will be between 2.03 and 5
+const time = Math.floor(Math.random() * 3 + 2);
+document.getElementById('time').innerText = time;
+
+setTimeout(function () {
+  if (!hasWon) {
+    result.innerText = "Time's up! You lost!";
+
+    // always remove the eventListener when you're done
+    body.removeEventListener('click', clickEvent);
+  }
+}, time * 1000);
+
+// Add the event listener
+body.addEventListener('click', clickEvent);
