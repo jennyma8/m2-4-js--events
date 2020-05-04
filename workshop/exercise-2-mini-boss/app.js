@@ -1,15 +1,16 @@
 const body = document.querySelector('body');
-
-const stopwatch = document.querySelector('stopwatch');
-const timer = document.querySelector('timer');
+const time = document.getElementById('time');
+const stopwatch = document.getElementById('stopwatch');
+const timer = document.getElementById('timer');
 
 const date = new Date();
 const currentTime = date.getHours()+':'+date.getMinutes()+':'+date.getSeconds();
 
-const time = document.querySelector('time');
-const display = document.createElement('span');
-display.innerText = 'hello world';
-time.appendChild(display);
+function myfunction() {
+    console.log(currentTime)
+}
+
+time.appendChild;
 
 
 
