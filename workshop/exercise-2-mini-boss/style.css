@@ -1,0 +1,23 @@
+
+body {
+    height: 100vh;
+    
+}
+
+.current {
+    font-size: 20px;
+}
+.stopwatch {
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.button {
+        text-align: center;
+}
+
+button {
+    
+}

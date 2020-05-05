@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html>
 <header>
-
+    <link rel="stylesheet" href="/workshop/exercise-2-mini-boss/style.css" />
 </header>
-<style>
-    body {
-        height: 100vh;
-    }
-</style>
+
 <body>
-    <p class="time" id="time">Display time</p>
-    <p class="stopwatch" id="stopwatch"></p>
+    <p class="current">Current Time: <span class="time" id="time"></p>
+    <p class="stopwatch" id="stopwatch">00:00</p>
+        <div class="button"><button id = "start" onclick="startStop()">Start/Stop</button></div>
     <p class="timer" id="timer"></p>
     <script src="app.js"></script>
 </body>
