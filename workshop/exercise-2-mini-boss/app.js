@@ -82,5 +82,29 @@ function startStop() {
 
 //timer
 
+const numberTimer = document.getElementById('numberTimer');
+const timerDisplay = document.getElementById('timerDisplay');
+const buttonTimer = document.getElementById('buttonTimer');
+
+let timerInterval = 0;
+
+function startTimer() {
+  let newTimer = Number(numberTimer.value);
+  if (newTimer !== 0) {
+    timerInterval = setInterval(function () {
+      newTimer = newTimer - 0.01;
+      displayTimerValue = newTimer.toFixed(2);
+
+      document.getElementById('timerDisplay').innerText = displayTimerValue;
+      if (displayTimerValue == 0) {
+        document.getElementById('timerDisplay').innerText = "00.00";
+        clearInterval(timerInterval);
+        alert("Timer's up!");
+      }
+    }, 10);
+  }
+}
+
+document.getElementById("buttonTimer").addEventListener("click", startTimer);
 
 
