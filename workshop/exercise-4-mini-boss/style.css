@@ -1,0 +1,32 @@
+main{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height:100vh
+}
+
+button{
+    background-color:red;
+    border:none;
+    border-radius:4px;
+    margin: 10px 10px;
+    color:white;
+    width:100px;
+    height:100px;
+}
+
+.green{
+    background-color:seagreen;
+}
+.center{
+    position:absolute;
+    top:50%;
+    left:50%;
+}
+#gameEnd{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-size:33px;
+}
